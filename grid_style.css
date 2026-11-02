@@ -1,0 +1,313 @@
+
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+	margin-left: 5vw;
+	margin-right: 5vw;
+  background: #fcfdfd; /*светлый*/
+  color: #333;
+}
+p{
+	margin-block-start: 0.2rem;	/*В браузерах по умолчанию 1rem = 16px*/
+	margin-block-end: 0.2rem;	
+}
+pre{
+	font-size: 0.9rem;
+	max-width: 1024px;
+	background: #fffaf0;
+}
+ul{
+	margin: 0.5rem 0 0.5rem 0;
+}
+
+.body-container{
+	display: grid;
+	/* Две колонки: первая фиксирована, вторая занимает оставшееся пространство */
+	grid-template-columns: 180px 1fr;
+	/* Две строки: первая фиксирована, вторая занимает оставшееся пространство */
+	grid-template-rows: 80px 1fr;
+	/* Описание областей сетки */
+	grid-template-areas:
+	 "header header"
+	 "sidebar main";
+	gap: 1px;
+	border: 1px solid #f7f8fa;
+	height: 100vh;
+}
+
+/* Стили для ячеек */
+.pm_header{
+	/* Привязка элемента к области "header" */
+	grid-area: header;
+	background: #f0f0f0;	/* серый*/
+	padding: 10px;
+}
+
+.header-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+	align-content: center;
+	align-items: center;
+	/*
+	justify-content: flex-start;
+	justify-content: space-between;		
+	align-content: center;
+	align-items: center;
+	*/
+	gap: 10px;
+}
+.header-logo{
+	flex-shrink: 2;
+	width: 40px;
+	height:40px;
+}
+.header-title{
+	flex-shrink: 1;
+	align-content: center;
+	width: auto;
+	height:40px;
+}
+.header-nav{
+	flex-shrink: 2;
+	/* height: 40px;				Ширина блоков */		
+	padding: 10px;			/* Поля вокруг текста */
+	width: auto;				/* Ширина блоков */
+	border: 2px solid #aacbc0; /* Параметры рамки */
+}
+
+.sidebar-container {
+	/* Привязка элемента к области "sidebar" */
+	grid-area: sidebar;
+	background: #f7f8fa; /*светло серый*/
+	padding: 10px;
+}
+.sidebar-nav{
+	height: auto;	/* высота */
+	width: auto;		/*ширина*/
+	margin: 6px;
+	padding-top: 4px;
+	padding-bottom: 8px;	height: auto;	/* высота */
+	width: auto;		/*ширина*/
+	background: #fff3cc; /* e0ffff ; f7f7f5*/
+	margin: 6px;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+/* меню навигации */
+nav{
+	height: auto;	/* высота */
+	width: auto;		/*ширина*/
+	margin: 6px;
+	padding-top: 4px;
+	padding-bottom: 8px;
+}
+/* Ссылки в меню навигации */
+nav a {
+  display: block;	
+  padding: 2px 0px 0px 5px;	/* сверху снизу справа слева? */
+  text-decoration: none;
+  /*font-size: 20px;*/
+  color: #2F4F4F;
+}
+/* При наведении курсора мыши на навигационные ссылки измените их цвет */
+nav a:hover {
+  color: #0064c8;
+}
+.main-container {
+	/* Привязка элемента к области "main" */
+	grid-area: main;
+	background: #fffffc; /*светлый*/
+	padding: 2px 2px 0px 16px;	/*сверху снизу справа слева*/
+}
+
+h1{
+	font-size: 1.7em;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	color: #0969da;
+	/*text-align: center;*/
+}
+h2{
+	font-size: 1.5em;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	color: green;
+	/*text-align: center;	*/
+}
+h3{
+	padding-left: 1.5em;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	color: #8f3808;
+	/*text-align: center;	*/
+}
+p.hd{
+	font-size: 1.2em;			/* 1em равен размеру шрифта родительского элемента. Если у самого элемента размер шрифта не задан явно, то за основу берётся размер шрифта его ближайшего родителя*/
+	font-weight: bold;
+	padding-left: 1.0rem;	/* 1rem равен размеру шрифта корневого элемента (html). В браузерах по умолчанию 1rem = 16px*/
+	color: #8f3808;
+}
+
+.title-h1{
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.1em;
+	margin-block-end: 0.1em;	
+	color: #0969da; /* */
+}
+.title-nav{
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	padding-left: 1.0rem;	/* 1rem равен размеру шрифта корневого элемента (html). В браузерах по умолчанию 1rem = 16px*/
+	color: #8f3808; /*коричневый*/
+}
+img{
+	width: 100%;	
+	max-width: 600px;
+}
+img.small{
+	display: block;
+	max-height: 200px;
+	width: auto;
+	margin-left: 20vw;
+}
+img.medium{
+	display: block;
+	max-height: 400px;
+	width: auto;
+	margin-left: 5vw;
+}
+.footer-logo{
+	width: 40px;
+	height:40px;
+}
+
+@media (max-width: 1024px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 718px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.body-container{
+		grid-template-rows: 120px 1fr;
+		/* Описание областей сетки */
+		grid-template-areas:
+		"header header"
+		"main main";
+		height: 100vh;
+	}
+	.main-container {
+		padding: 10px;
+	}
+	.sidebar-container {
+		display: none;
+	}
+}
+
+article {
+	padding-left: 5px;
+	padding-right: 5px;	
+	padding-top: 5px;
+  padding-bottom: 1rem;	
+}
+
+blockquote{
+	background: #fffaf0;
+}
+
+aside {
+	background: #f6f4f0;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+  margin: 0px 0px 0px 5px;	/*сверху справа снизу слева*/	
+	width: 220px;
+	float: right;
+	height: 100%;
+}
+.img_dot{
+	height:10px;
+	width: 37px;	
+}
+.foto100x100{
+	width: 100px;
+	height:100px;
+}
+
+.card {
+  background: #ffd6bf;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0,0,0,0.2);
+  margin-top: 5px;
+	margin-right: 140px;
+}
+
+dd {
+	font-style: italic; /* Курсивное начертание текста */
+}
+
+dt {
+	margin-top: 1em; /* Отступ сверху */
+}
+/* Настройки таблицы */
+.layoutTD {
+	width: 100%; /* Ширина всей таблицы */
+	border: 1px dashed;
+	border-color: blue;
+	cellpadding="4";
+}
+
+td {
+	/*vertical-align: top;  Вертикальное выравнивание в ячейках */
+	padding: 5px; /* Поля вокруг ячеек */
+}
+
+.leftcol {
+	width: 50%; /* Ширина левой колонки */
+	background: #fffffc; /* Цвет фона левой колонки */
+	border: 1px solid #e6e6e6; /* Параметры рамки */
+}
+.rightcol {
+	width: 50%; /* Ширина правой колонки */
+	background: #f0f0f0; /* Цвет фона правой колонки */
+	border: 1px solid #e6e6e6; /* Параметры рамки */
+}
+.spacer {
+	width: 10px; /* Расстояние между колонками */
+}
+.unioncol{
+	border-top: 1px solid #ff0000;
+	background: #ebfff5;
+}
+
+/* Настройки таблицы для разметки*/
+.markupTD{
+	width: 100%; /* Ширина всей таблицы */
+	background: white;
+  padding: 0.5rem;
+	border: 2px solid #f7f8fa;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+td.leftmark{
+	width: 180px; /* Ширина колонки */
+	background: #f0f0f0;
+}
+td.rightmark{
+	width: auto; /* Ширина колонки */
+	background: #fffffc;
+}
+.spacemark{
+	width: 5px; /* Расстояние между колонками */
+}
+/* Настройки таблицы на 3 колонки*/
