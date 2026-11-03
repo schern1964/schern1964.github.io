@@ -1,15 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="ru" >
 <head>
-	<meta charset="UTF-8"> <!-- charset=".." атрибут задает кодировку документа --> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1">	<!-- настраивает отображение на мобильных устройствах -->
-	<!-- Описание страницы (для поисковых систем) -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1">
 	<meta name="description" content="Статические HTML страницы"> 
-	<meta name="keywords" content="HTML, стили, теги, атрибуты, фото, ноты, альт, саксофон, программирование, AVR, STM">
+	<meta name="keywords" content="HTML, CSS, теги, атрибуты, фото, ноты, альт, саксофон, программирование, AVR, STM">
 	<meta name="author" content="Черножуков Сергей">
-	
-	<title>molehill</title> <!-- заголовок окна веб-страницы, отображается в левом верхнем углу окна браузера -->
-	<link rel="stylesheet" href="grid_style.css"> <!-- Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами -->
+	<title>passion</title>
+	<link rel="stylesheet" href="grid_style.css">
 </head>
 
 <body class="body-container">
@@ -37,15 +35,17 @@
 	</header>
 	
 	<div class="sidebar-container">
-		<nav id="navi">
-			<p class="title-nav">Навигация</p>
-			<a href="#begin">Знакомство с HTML</a>
-			<a href="./note.html">Стили</a>
-			<a href="./prog.html">Вёрстка</a>
-			<a href="#refs">Сетка</a>
-			<a href="#refs">Полезные ссылки</a>
-			<a href="#cont">Контакты</a>			
-		</nav>
+		<div class="sidebar-nav">
+			<nav id="navi">
+				<p class="title-nav">Навигация</p>
+				<a href="#begin">Знакомство с HTML</a>
+				<a href="./note.html">Стили</a>
+				<a href="./prog.html">Вёрстка</a>
+				<a href="#refs">Сетка</a>
+				<a href="#refs">Полезные ссылки</a>
+				<a href="#cont">Контакты</a>			
+			</nav>
+		</div>
 	</div>
 	
 	<page-content  class="main-container"> 
@@ -322,37 +322,44 @@
 			
 		</article>
 		
-		<footer>	<!-- (Подвал) — самый низ сайта. Контакты, ссылки на соцсети, копирайт. -->
-		<p class="hd" id="refs">Полезные ссылки</p> 	<!-- Заголовок третьего уровня -->
-		<p>
-			<a href="https://htmlbook.ru/">Home | htmlbook.ru</a>
-		</p>
-		<p>		
-			<a href="https://htmlacademy.ru/">HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript</a>		
-		</p>
-		<p>
-			<a href="https://webref.ru/">WebReference</a>
-		</p>
-		<p>
-		<a href="https://thecode.media/">КОД Журнал Яндекс практикума</a>
-		</p>
-		<p>
-			<a href="https://ru.w3docs.com/">W3docs</a>
-		</p>		
-		
-		<p class="hd" id="cont">Как со мной связаться:</p>
-		<p>Пишите мне на почту:<a href="mailto:schern1964@bk.ru">mail.ru</a></p>
-		<hr>		
-		<p>© 2026 Моя компания</p>
-		<div class="footer-logo">
-			<img src="hedgehog.png"alt="Ёжик">		
-		</div>
-	</footer>
-	
 		<br>
 		<a href="#begin">Перейти в начало</a>
 		<br>
-	</page-content class="main-container">		
+	</page-content class="main-container">
+	
+		<footer class="footer-container">
+			<div class="footer-wr">
+				<div class="footer-ref">
+					<p class="hd" id="cont">Контакты:</p>
+					<p>Пишите мне на почту:<a href="mailto:schern1964@bk.ru">mail.ru</a></p>
+				</div>
+				<div class="footer-ref">
+					<p class="hd" id="refs">Полезные ссылки:</p>
+					<p>
+						<a href="https://htmlbook.ru/">Home | htmlbook.ru</a>
+					</p>
+					<p>		
+						<a href="https://htmlacademy.ru/">HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript</a>		
+					</p>
+					<p>
+						<a href="https://webref.ru/">WebReference</a>
+					</p>
+					<p>
+					<a href="https://thecode.media/">КОД Журнал Яндекс практикума</a>
+					</p>
+					<p>
+						<a href="https://ru.w3docs.com/">W3docs</a>
+					</p>				
+				</div>			
+			</div>
+			
+			<div class="footer-logo">
+				<img src="hedgehog.png"alt="Ёжик">		
+			</div>			
+			<p>© 2026 Моя компания</p>
+			<hr>	
 
+		</footer>
+	
 </body>
 </html>
