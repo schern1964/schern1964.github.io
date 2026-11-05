@@ -36,35 +36,6 @@ ul{
 	height: 100vh;
 }
 
-@media (max-width: 1024px) {
-	body {
-		margin-left: 0;
-		margin-right: 0;
-	}
-}
-
-@media (max-width: 740px) {
-	body {
-		margin-left: 0;
-		margin-right: 0;
-	}
-	.body-container{
-		grid-template-rows: 120px 1fr auto;
-		/* Описание областей сетки */
-		grid-template-areas:
-		"header header"
-		"main main"
-		"footer footer";
-		height: 100vh;
-	}
-	.main-container {
-		padding: 10px;
-	}
-	.sidebar-container {
-		display: none;
-	}
-}
-
 /* Стили для ячеек */
 .pm_header{
 	/* Привязка элемента к области "header" */
@@ -238,7 +209,6 @@ img.medium{
 	margin-left: 5vw;
 }
 
-
 article {
 	padding-left: 5px;
 	padding-right: 5px;	
@@ -259,6 +229,12 @@ aside {
 	float: right;
 	height: 100%;
 }
+
+pre{
+	overflow-x: auto;
+	white-space: pre-wrap;
+}
+
 .img_dot{
 	height:10px;
 	width: 37px;	
@@ -336,3 +312,39 @@ td.rightmark{
 	width: 5px; /* Расстояние между колонками */
 }
 /* Настройки таблицы на 3 колонки*/
+
+
+@media (max-width: 1024px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 740px) {
+	body {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.body-container{
+		grid-template-rows: 120px 1fr auto;
+		/* Описание областей сетки */
+		grid-template-areas:
+		"header header"
+		"main main"
+		"footer footer";
+		height: 100vh;
+	}
+	.main-container {
+		padding: 10px;
+	}
+	.sidebar-container {
+		display: none;
+	}
+	
+	img.medium{
+		max-width: 700px;
+		margin-left: 0;
+	}
+}
+
