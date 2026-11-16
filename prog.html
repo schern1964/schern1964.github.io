@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"> <!-- charset=".." атрибут задает кодировку документа --> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Описание страницы (для поисковых систем) -->
+	<meta name="description" content="шаблоны программ">
+	<meta name="keywords" content="программирование, AVR, STM">
+	<meta name="author" content="Черножуков Сергей">
+	
+	<title>programs</title>
+	<link rel="stylesheet" href="grid_style.css"> <!-- Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами -->
+</head>
+
+<body class="body-container">
+	<header class="pm_header">
+		<div class="header-container">
+			<div class="header-logo">
+				<img src="logo_cs.png" alt="Sax">
+			</div>
+			<div class="header-title">
+				<h1><span>Страницы на GitHub</span></h1>			
+			</div>
+			<div class="header-nav">
+				<a href="index.html">Web страницы</a> | <a href="./prog.html">Микроконтроллеры</a> | <a href="./note.html">Ноты</a> | <a href="./image.html">Фото</a>
+			</div>	
+		</div>
+	</header>
+	
+	<div class="sidebar-container">
+		<div class="sidebar-nav">
+			<nav id="navi">
+				<p class="title-nav">Навигация</p>
+				<a href="#avr">AVR</a>
+				<a href="#stm">STM32</a>
+				<a href="#reference">Литература</a>
+				<a href="#refs">Полезные ссылки</a>
+				<a href="#cont">Контакты</a>			
+			</nav>
+		</div>
+	</div>
+	
+	<page-content  class="main-container">
+		<main>
+			<a name="begin"></a>
+			<h2>Шаблоны программ</h2>
+		</main>
+	
+	<article>
+		<p>Будущая статья о программирвании микроконтроллеров AVR и STM...</p>	
+		<h3><a name="contents"></a>Содержание:</h3> 	<!-- Заголовок третьего уровня -->
+				<ol>	<!-- Нумерованный список -->
+					<li> <a href="#avr">Микроконтроллеры AVR</a></li>			
+					<li> <a href="#stm">Микроконтроллеры STM32</a></li>
+					<li> <a href="#reference">Литература</a></li>								
+				</ol>
+		<h3><a name="avr"></a>1. Микроконтроллеры AVR</h3>
+			<p>Примеры кодов для работы с периферией микроконтроллеров AVR</p>
+			<p>Исходники можно посмотреть <a href="https://github.com/sichern/AVR-fragments">здесь<a></p>
+			<br>
+		<h3><a name="stm"></a>2. Микроконтроллеры STM32</h3>
+			<h4>STM32 + CMSIS</h4>
+			<p>Примеры кодов для работы с периферией микроконтроллеров STM32</p>
+			<p>Исходники можно посмотреть <a href="https://github.com/sichern/STM32-fragments">здесь<a></p>
+			<br>			
+		</article>
+		
+		<br>
+		<a href="#begin">Перейти в начало</a>
+		<br>
+	</page-content>
+
+	<footer class="footer-container">
+		<div class="footer-wr">
+			<div class="footer-ref">
+				<p class="hd" id="cont">Контакты:</p>
+				<p>Пишите мне на почту:<a href="mailto:schern1964@bk.ru">schern1964@bk.ru</a></p>
+			</div>
+			<div class="footer-ref">
+				<p class="hd" id="refs">Полезные ссылки:</p>
+				<p>
+					<a href="https://schern.online/">schern.online</a>
+				</p>		
+			</div>			
+		</div>
+		
+		<div class="footer-logo">
+			<img src="hedgehog.png"alt="Ёжик">		
+		</div>			
+		<p>© 2026 Моя компания</p>
+		<hr>	
+
+	</footer>
+	
+</body>
+</html>
