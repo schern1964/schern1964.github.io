@@ -1,22 +1,41 @@
-<!DOCTYPE html>		<!-- объявление типа документа для HTML5 -->
-<html lang="ru">	<!-- корневой элемент, заключает в себе все содержимое веб-страницы
-									lang=".." атрибут для указания языка страницы
-									Внутри <html> страница строго делится на две большие зоны:
-									невидимую (<head>) и видимую (<body>)-->
-<head>	<!-- раздел для заголовка страницы и технической информации
-				Внутри контейнера <head> допускается размещать следующие элементы:
-				<base>, <basefont>, <bgsound>, <link>, <meta>, <script>, <style>, <title> 
-				Содержимое <head> не видимо для посетителей сайта -->
-	<!-- тег <meta> - метаданные, которые используются для хранения информации предназначенной для браузеров и поисковых систем -->
-	<meta charset="UTF-8"> <!-- charset=".." атрибут задает кодировку документа --> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- настраивает отображение на мобильных устройствах -->
-	<!-- Описание страницы (для поисковых систем) -->
+<!DOCTYPE html>
+<html lang="ru">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Одинокая страница"> 
 	<meta name="keywords" content="ноты, альт, саксофон">
 	<meta name="author" content="Черножуков Сергей">
 	
 	<title>Music</title> <!-- заголовок окна веб-страницы, отображается в левом верхнем углу окна браузера -->
 	<link rel="stylesheet" href="grid_style.css"> <!-- Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function(m,e,t,r,i,k,a){
+			m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114276946','ym');
+		ym(114276946, 'init', {
+			ssr:true,
+			webvisor:true,
+			clickmap:true,
+			ecommerce:"dataLayer",
+			referrer: document.referrer,
+			url: location.href,
+			accurateTrackBounce:true,
+			trackLinks:true
+		});
+	</script>
+	<noscript>
+		<div>
+			<img src="https://mc.yandex.ru/
+			watch/114276946" style="position:absolute;
+			left:-9999px;" alt="" />
+		</div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="body-container">
@@ -38,7 +57,7 @@
 	<div class="sidebar-container">
 		<div class="sidebar-nav">
 			<nav id="navi">
-				<p class="title-nav">Навигация</p>
+				<p class="title-nav">Содержание</p>
 				<a href="#toi">A Toi</a>
 				<a href="#existais">Et Si Tu N'existais Pas</a>
 				<a href="#saly">Salyt</a>
