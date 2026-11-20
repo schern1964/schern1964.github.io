@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1">
+	<meta name="description" content="Статические HTML страницы"> 
+	<meta name="keywords" content="HTML, CSS, теги, атрибуты, фото, ноты, альт, саксофон, программирование, AVR, STM">
+	<meta name="author" content="Черножуков Сергей">
+	<title>html</title>
+	<link rel="stylesheet" href="grid_style.css">
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function(m,e,t,r,i,k,a){
+			m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114276946','ym');
+		ym(114276946, 'init', {
+			ssr:true,
+			webvisor:true,
+			clickmap:true,
+			ecommerce:"dataLayer",
+			referrer: document.referrer,
+			url: location.href,
+			accurateTrackBounce:true,
+			trackLinks:true
+		});
+	</script>
+	<noscript>
+		<div>
+			<img src="https://mc.yandex.ru/
+			watch/114276946" style="position:absolute;
+			left:-9999px;" alt="" />
+		</div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+
+<body class="body-container">
+	<header class="pm_header">
+		<div class="header-container">
+			<div class="header-logo">
+				<img src="logo_cs.png" alt="Логотип">
+			</div>
+			<div class="header-title">
+				<h1><span>Страницы на GitHub</span></h1>			
+			</div>
+			<div class="header-nav">
+				<a href="index.html">Домой</a> | <a href="./web.html">Web</a> | <a href="./prog.html">Микроконтроллеры</a> | <a href="./note.html">Ноты</a> | <a href="./image.html">Фото</a>
+			</div>
+		</div>
+	</header>
+	
+	<div class="sidebar-container">
+		<div class="sidebar-nav">
+			<nav id="navi">
+				<p class="title-nav">Навигация</p>
+				<a href="./web.html">Создание сайта</a>
+				<a href="./mark.html">Знакомство с HTML</a>
+				<a href="./style.html">CSS</a>
+				<a href="#begin">Вёрстка</a>
+				<a href="#refs">Полезные ссылки</a>
+				<a href="#cont">Контакты</a>			
+			</nav>
+		</div>
+	</div>
+	
+	<div  class="main-container"> 
+		<main>
+			<a name="begin"></a>
+			<h2>Вёрстка</h2>
+		</main>
+		<article>
+			<a name="contents"></a>
+			<p class="title-nav">Содержание:</p>
+					<ol>
+						<li> <a href="#base">Поток</a></li>
+						<li> <a href="#table">Разметка с помощью таблиц</a></li>						
+						<li> <a href="#flex">Flexbox_CSS</a></li>						
+						<li> <a href="#grid">Grid_CSS</a></li>
+					</ol>
+
+			<section id="base">
+				<h3>Поток</h3>	
+				<p>
+					Ппоток - порядок отображения элементов на веб-странице. Сам поток задаётся структурой HTML-кода и элементы на веб-странице по умолчанию отображаются в том же порядке, как они идут в коде HTML.
+				</p>
+				<hr>
+			</section>
+			
+			<section id="table">
+				<h3>Разметка с помощью таблиц</h3>
+				<aside>
+					<p>Боковая панель</p>
+				</aside>				
+				<p>
+					Текст ...
+				</p>
+			</section>
+			
+			<section id="flex">
+				<h3>Флексбоксы</h3>
+				<p>
+					Flexbox (Flexible Box Layout) — это модуль CSS, предназначенный для создания гибких и адаптивных макетов. 
+				</p>
+			</section>
+			
+			<section id="grid">
+				<h3>CSS Grid</h3>			
+				<p>
+					CSS Grid позволяет создавать сложные макеты, адаптирующиеся к размерам экрана. Его особенность в том, что сетка строк и колонок полностью задаётся в CSS и нам не нужно добавлять дополнительные HTML-элементы.
+				</p>				
+			</section>			
+		</article>
+		
+		<br>
+		<a href="#begin">Перейти в начало</a>
+		<br>
+	</div class="main-container">
+	
+	<footer class="footer-container">
+		<div class="footer-wr">
+			<div class="footer-ref">
+				<p class="hd" id="cont">Контакты:</p>
+				<p>Пишите мне на почту:<a href="mailto:schern1964@bk.ru">schern1964@bk.ru</a></p>
+			</div>
+			<div class="footer-ref">
+				<p class="hd" id="refs">Полезные ссылки:</p>
+				<p>
+					<a href="https://schern.online/">schern.online</a>
+				</p>			
+			</div>			
+		</div>
+		
+		<div class="footer-logo">
+			<img src="hedgehog.png"alt="Ёжик">		
+		</div>			
+		<p>© 2026 Моя компания</p>
+		<hr>	
+
+	</footer>
+	
+</body>
+</html>
